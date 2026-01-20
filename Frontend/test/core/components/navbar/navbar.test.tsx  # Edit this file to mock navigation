@@ -1,0 +1,18 @@
+import React from 'react';
+import { render, fireEvent } from '@testing-library/react';
+import Navbar from '../../../components/Navbar';
+import { signOut } from '../../../services/auth';
+
+jest.mock('../../../services/auth');
+
+describe('Navbar mobile menu panel', () => {
+  test('mobile: clicking logout closes the menu and calls signOut', () => {
+    const { getByText } = render(<Navbar />);
+    const logoutButton = getByText('Logout');
+
+    fireEvent.click(logoutButton);
+
+    expect(signOut).toHaveBeenCalled();
+    // Add assertions to check if the menu is closed
+  });
+});

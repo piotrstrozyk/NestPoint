@@ -1,0 +1,21 @@
+{
+  "name": "NestPoint",
+  "short_name": "NP",
+  "description": "NestPoint is a web application that provides a platform for users to manage and organize their real estate efficiently",
+  "start_url": "/",
+  "theme_color": "#72383D",
+  "background_color": "#EFE9E1",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/icons/nest-192.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "/icons/nest-512.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}

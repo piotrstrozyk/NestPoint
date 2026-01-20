@@ -1,0 +1,17 @@
+services:
+  frontend:
+    build:
+      context: ./
+      dockerfile: Dockerfile.prod
+    ports:
+      - '3000:3000'
+    networks:
+      - nest-network
+    healthcheck:
+      test: ['CMD', 'curl', '-f', 'http://localhost:3000']
+      interval: 30s
+      retries: 5
+
+networks:
+  nest-network:
+    name: nest-network
