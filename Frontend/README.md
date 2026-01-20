@@ -68,6 +68,8 @@ By clicking the *Listings* button in the navbar, the user is taken to the **/apa
 
 The *View on Map* button opens a modal with an interactive map, making it easier to search listings by location. The map also includes search filters and an option to switch to satellite view.
 
+![Alt text](./images/map.png "Satellite map")
+
 ## Adding Listings
 
 By clicking the *Add Apartment* button in the navbar, a logged-in **Owner** can add a new listing. The process includes:
@@ -87,6 +89,8 @@ Selecting a listing from the list navigates the user to the listing details page
 * The key data section displays available amenities, surface area, and additional fees
 * The **payment info** section is used to manage rentals and displays pricing information
 * At the bottom of the page, there is a reviews section
+
+![Alt text](./images/address.png "Address map")
 
 ## Auctions
 
@@ -116,6 +120,8 @@ As part of the payment simulation, there is a small chance that the payment will
 
 If the rental is not paid within **24 hours**, a monetary penalty is applied to the tenant. Until the penalty is paid, the tenant cannot create new reservations. The unpaid listing page also displays further instructions (the penalty can be paid from the tenant’s profile).
 
+![Alt text](./images/auction.png "Auction window")
+
 ## Standard Rental
 
 A tenant can also select any available date that is not associated with an auction and book the listing at a fixed price. Clicking **Book Apartment Now** opens a payment modal where the tenant:
@@ -129,6 +135,8 @@ A tenant can also select any available date that is not associated with an aucti
 After a rental payment is accepted, a WebSocket connection is opened for chat communication between the owner and the tenant. The chat is accessible via the envelope icon in the navbar.
 
 Clicking the icon opens a modal with available conversations. Selecting one activates the chat window. All chat communication happens in real time via WebSocket.
+
+![Alt text](./images/chat.png "Chat")
 
 ## Reviews
 
